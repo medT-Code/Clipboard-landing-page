@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Clipboard landing page</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: 'Bai Jamjuree', sans-serif;
+    }
+    main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 70vh;
+      background-image: url(./images/bg-header-mobile.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .section-one{
+      display: flex;
+      flex-direction: column;
+      gap: 2.3rem;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      text-align: center;
+      
+    }
+
+   .logo{
+    height: 6rem;
+   }
+
+   .header-title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+   }
+
+   .header-para{
+    font-size: 1.159rem;
+    color: hsl(201, 11%, 66%);
+   }
+
+   .download{
+    display: block;
+    padding: 0.85rem;
+    width: 100%;
+    border-radius: 10vh;
+    border: none;
+    margin-bottom: 1.5rem;
+   }
+   .d-one{
+    margin-bottom: 1.5rem;
+   }
+   .header-flex-3{
+    width: 100%;
+   }
+
+
+   .section-two{
+    display: flex;
+    justify-content: center;
+    height: 25vh;
+   }
+   .follow-up{
+    margin-top: 1rem;
+    text-align: center;
+    width: 80%;
+   }
+
+   .keep-track{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+   }
+   .clipboard{
+    font-size: 1.159rem;
+    color: hsl(201, 11%, 66%);
+   }
+
+   .laptop{
+    height: 15rem;
+   }
+
+   .section-three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 2rem;
+   }
+
+   .div-quick{
+    width: 80%;
+    text-align: center;
+   }
+
+   .p-flex{
+    font-size: 1.159rem;
+    color: hsl(201, 11%, 66%);
+   }
+
+   .quick , .icloud , .complete {
+    margin-bottom: 2rem;
+   }
+
+   .h2-flex{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+   }
+
+   .devices{
+    height: 15rem;
+   }
+
+   .section-four{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 60vh;
+   }
+
+   .access{
+    width: 80%;
+    text-align: center;
+   }
+
+   .uni{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 20vh;
+   }
+   .workflow{
+    width: 80%;
+   }
+
+   .section-five-contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    height: 80vh;
+   }
+
+   .workflow-flex{
+    width: 80%;
+   }
+
+   .section-six{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 65vh;
+   }
+
+   .google-svg{
+    margin-top: 4rem;
+   }
+
+   .clipboard-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    height: 50vh;
+   }
+
+   .clipboard-child , .buttom-button{
+    width: 80%;
+   }
+
+   .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    color: hsl(201, 11%, 66%);
+    background-color: whitesmoke;
+   }
+
+   .footer-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+   }
+
+   .footer-logo{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+    justify-content: center;
+   }
+
+   .foot-logo{
+     height: 4.5rem;
+   }
+   .footer-svg:hover{
+    background-color: hsl(171, 66%, 44%);
+   }
+   .footer-para:hover{
+    color: hsl(171, 66%, 44%);
+   }
+
+   .footer-socials{
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+   }
+
+   .footer-para{
+    color: hsl(201, 11%, 66%);
+    text-decoration: none;
+    font-size: 1.3rem;
+   }
+
+   .attribution{
+    background-color: whitesmoke;
+   }
+
+   .d-one{
+    background-color:hsl(171, 66%, 44%);
+    box-shadow: 0 6px 5px hsl(171, 100%, 13%);
+   }
+   .d-two{
+    background-color:hsl(233, 100%, 69%);
+    box-shadow: 0 6px 5px hsl(233, 100%, 14%);
+   }
+   .download{
+    color: whitesmoke;
+    
+   }
+
+   @media(min-width: 1020px){
+    main{
+      background-image: url(./images/bg-header-desktop.png);
+      min-height: 80vh;
+    }
+
+    .download{
+      display: inline;
+      width: 13rem;
+      padding: 1rem;
+      font-size: 1rem;
+   }
+   .d-one{
+    margin-right: 1rem;
+   }
+
+   .section-one , .follow-up , .access , .clipboard-child , .workflow{
+    width: 50%;
+   }
+
+   .laptop{
+    height: 30rem;
+   }
+   .section-three{
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5rem;
+   }
+
+   .div-quick{
+    text-align: start;
+    width: 25%;
+   }
+
+   .section-four{
+    height: 80vh;
+   }
+   .devices{
+    height: 30rem;
+   }
+
+   .workflow{
+    margin-top: 8rem;
+   }
+
+   .uni{
+    min-height: 20vh;
+   }
+
+   .section-five{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+   }
+
+   .section-five-contain{
+    flex-direction: row;
+   }
+   .section-five-contain{
+    width: 80%;
+   }
+
+   .section-six{
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    height: 50vh;
+   }
+   .google-svg{
+    margin-top: 0;
+  }
+
+  .footer{
+    height: 25vh;
+    background-color: whitesmoke;
+   }
+
+  .footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .footer-logo{
+    width: 5%;
+  }
+  .foot-logo{
+    height: 3rem;
+  }
+
+  .footer-flex{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+  }
+
+  .footer-socials{ 
+    height: 100%;
+    align-items: center;
+  }
+  .footer-svg{
+    height: 1.2rem;
+   }
+   }
+
+   @media(min-width: 600px) and (max-width: 1019px){
+    .download{
+      display: inline;
+      width: 13rem;
+      padding: 1rem;
+   }
+   .d-one{
+    margin-right: 1rem;
+   }
+   .d-two{
+    margin-left: 1rem;
+   }
+
+   .section-six{
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    height: 40vh;
+   }
+
+   .logos{
+    height: 1.5rem;
+   }
+
+   .google-svg{
+    margin-top: 0;
+   }
+
+   .section-five-contain{
+    height: 40vh;
+   }
+   .section-two{
+    height: 10vh;
+   }
+   .section-four{
+    height: 50vh;
+   }
+
+   .clipboard-header{
+    height: 30vh;
+   }
+
+   .footer-flex{
+    gap: 2rem;
+   }
+
+   .footer-logo{
+    margin-bottom: 2rem;
+   }
+   }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="section-one">
+      <div class="header-flex-1"><img class="logo" src="./images/logo.svg" alt=""></div>
+
+      <div class="header-flex-2">
+       <h1 class="header-title">A history of everything you copy</h1>
+
+       <p class="header-para">Clipboard allows you to track and organize everything you 
+       copy. Instantly access your clipboard on all your devices.</p>
+      </div>
+
+      <div class="header-flex-3">
+        <button class="download d-one">Download for iOS</button>
+        <button class="download d-two">Download for Mac</button>
+      </div>
+    </section>
+  </main>
+
+  <section class="section-two">
+    <div class="follow-up">
+      <h2 class="keep-track">Keep track of your snippets</h2>
+
+      <p class="clipboard">Clipboard instantly stores any item you copy in the cloud, 
+      meaning you can access your snippets immediately on all your 
+      devices. Our Mac and iOS apps will help you organize everything.</p>
+    </div>
+  </section>
+
+  <section class="section-three">
+    <div class=" two-flex div-laptop"><img class="laptop" src="./images/image-computer.png" alt=""></div>
+
+    <div class="two-flex div-quick">
+      <div class="quick">
+        <h2 class="h2-flex">Quick Search</h2>
+        <p class="p-flex">Easily search your snippets by content, category, web address, application, and more.</p>
+      </div>
+
+      <div class="icloud">
+        <h2 class="h2-flex">iCloud Sync</h2>
+        <p class="p-flex">Instantly saves and syncs snippets across all your devices.</p>
+      </div>
+
+      <div class="complete">
+        <h2 class="h2-flex">Complete History</h2>
+        <p class="p-flex">Retrieve any snippets from the first moment you started using the app.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-four">
+    <div class="access">
+      <h2 class="h2-flex">Access Clipboard anywhere</h2>
+      <p class="p-flex">Whether you’re on the go, or at your computer, you can access all your Clipboard 
+      snippets in a few simple clicks.</p>
+    </div>
+
+    <div class="img-devices">
+      <img class="devices" src="./images/image-devices.png" alt="">
+    </div>
+  </section>
+
+  <section class="uni">
+   <div class="workflow">
+      <h2 class="h2-flex">Supercharge your workflow</h2>
+      <p class="p-flex">We’ve got the tools to boost your productivity.</p>
+    </div> 
+  </section>
+   
+  <section class="section-five">
+    <div class="section-five-contain">
+      <div class="workflow-flex">
+      <div><img src="./images/icon-blacklist.svg" alt=""></div>
+
+      <h2 class="h2-flex">Create blacklists</h2>
+      <p class="p-flex">Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+    </div>
+
+    <div class="workflow-flex">
+      <div><img src="./images/icon-text.svg" alt=""></div>
+
+      <h2 class="h2-flex">Plain text snippets</h2>
+      <p class="p-flex">Remove unwanted formatting from copied text for a consistent look.</p>
+    </div>
+
+    <div class="workflow-flex">
+      <div><img src="./images/icon-preview.svg" alt=""></div>
+
+      <h2 class="h2-flex">Sneak preview</h2>
+      <p class="p-flex"> Quick preview of all snippets on your Clipboard for easy access.</p>
+    </div>
+    </div>
+    
+  </section>
+
+  <section class="section-six">
+    <div class="google-svg"><img class="logos" src="./images/logo-google.png" alt=""></div>
+
+    <div><img class="logos" src="./images/logo-ibm.png" alt=""></div>
+
+    <div><img class="logos" src="./images/logo-microsoft.png" alt=""></div>
+
+    <div><img class="logos" src="./images/logo-hp.png" alt=""></div>
+
+    <div><img class="logos" src="./images/logo-vector-graphics.png" alt=""></div>
+  </section>
+
+  <section class="section-seven">
+    <div class="clipboard-header">
+      <div class="clipboard-child">
+       <h1 class="header-title">Clipboard for iOS and Mac OS</h1>
+
+       <p class="header-para"> Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
+       and you’re ready to start adding to your clipboard.</p>
+      </div>
+
+      <div class="buttom-button">
+        <button class="download d-one">Download for iOS</button>
+        <button class="download d-two">Download for Mac</button>
+      </div>
+    </div>
+    </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-logo">
+       <img class="foot-logo" src="./images/logo.svg" alt="">
+     </div>
+
+      <div class="footer-flex">
+       
+       <div>
+         <a class="footer-para" href="">FAQs</a>
+       </div>
+
+       <div >
+         <a class="footer-para" href="">Contact Us</a>
+       </div>
+
+       <div>
+         <a class="footer-para" href="">Privacy Policy</a>
+       </div>
+      
+       <div>
+         <a class="footer-para" href="">Press Kit</a>
+       </div>
+
+       <div>
+         <a class="footer-para" href="">Install Guide</a>
+       </div>
+     </div>
+
+     <div class="footer-socials">
+       <div>
+         <img class="footer-svg" src="./images/icon-facebook.svg" alt="">
+       </div>
+
+       <div>
+         <img class="footer-svg" src="./images/icon-twitter.svg" alt="">
+       </div>
+
+       <div>
+         <img class="footer-svg" src="./images/icon-instagram.svg" alt="">
+       </div>
+     </div>
+    </div>
+    
+  </footer>
+
+   <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+</body>
+</html>
